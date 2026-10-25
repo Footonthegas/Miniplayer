@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mini Player</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <div class="eyebrow">NETFLIX COMPANION</div>
+    <h1>Mini Player</h1>
+    <p class="muted">Watch while you get other things done.</p>
+  </header>
+  <button id="toggleBtn" class="primary">Disable Mini Player</button>
+  <section class="premium">
+    <div class="premium-heading"><h2>Automatic Mini Player</h2><span class="badge">PREMIUM</span></div>
+    <p id="autoNote" class="muted">Automatically open a floating player when you switch tabs or hide Chrome, where Chrome supports it.</p>
+    <label class="toggle-row" for="autoPipToggle">
+      <span>Enable automatic mode</span>
+      <input id="autoPipToggle" type="checkbox" disabled>
+    </label>
+    <p id="premiumStatus" class="status" aria-live="polite"></p>
+    <button id="upgradeBtn" class="secondary">Explore Premium</button>
+    <button id="checkPremiumBtn" class="secondary check-premium">I have paid — check Premium</button>
+  </section>
+  <footer><button id="welcomeBtn" class="text-button">Premium & support</button></footer>
+  <script src="popup.js"></script>
+</body>
+</html>

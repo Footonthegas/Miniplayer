@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Mini Player — Choose your experience</title>
+  <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Mini Player home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="23" height="23" fill="none">
+            <rect x="2.5" y="4.5" width="19" height="15" rx="3" stroke="currentColor" stroke-width="1.6"/>
+            <path d="m10 9 5 3-5 3V9Z" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="brand-name">Mini Player <span>for Netflix</span></span>
+      </a>
+      <span class="top-note">A little more room to multitask.</span>
+    </header>
+
+    <section class="hero" id="top" aria-labelledby="pageTitle">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR SHOW. YOUR SPACE.</p>
+        <h1 id="pageTitle">Keep watching.<br><span>Keep doing.</span></h1>
+      </div>
+      <div class="hero-side">
+        <p>Keep a Netflix video in view while you work, browse, or take notes. Start with the free Mini Player, or upgrade for automatic mode.</p>
+        <button id="openNetflix" class="button secondary" type="button">Open Netflix <span aria-hidden="true">↗</span></button>
+      </div>
+    </section>
+
+    <section class="comparison-section" aria-labelledby="comparisonTitle">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PLANS</p>
+          <h2 id="comparisonTitle">Choose what works for you.</h2>
+        </div>
+        <p class="section-caption">The core player stays free.<br>Premium adds one hands-free convenience.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="comparison">
+          <colgroup>
+            <col class="feature-col">
+            <col class="plan-col">
+            <col class="plan-col">
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col" class="feature-heading">FEATURES</th>
+              <th scope="col" class="plan-heading free-heading">
+                <span class="plan-name">Free</span>
+                <span class="plan-detail">Everyday viewing</span>
+              </th>
+              <th scope="col" class="plan-heading premium-heading">
+                <span class="plan-name">Premium <span class="premium-mark" aria-hidden="true">✦</span></span>
+                <span class="plan-detail">Hands-free viewing</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><span class="feature-title">Mini Player with subtitles</span><span class="feature-detail">A separate window for your show</span></th>
+              <td><span class="included" aria-label="Included">✓</span></td>
+              <td class="premium-cell"><span class="included" aria-label="Included">✓</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="feature-title">Native Picture-in-Picture</span><span class="feature-detail">Use Chrome’s standard floating video</span></th>
+              <td><span class="included" aria-label="Included">✓</span></td>
+              <td class="premium-cell"><span class="included" aria-label="Included">✓</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="feature-title">Playback controls and timeline</span><span class="feature-detail">Play, pause, and move through the video</span></th>
+              <td><span class="included" aria-label="Included">✓</span></td>
+              <td class="premium-cell"><span class="included" aria-label="Included">✓</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="feature-title">Adjust subtitle size</span><span class="feature-detail">Make captions easier to read</span></th>
+              <td><span class="included" aria-label="Included">✓</span></td>
+              <td class="premium-cell"><span class="included" aria-label="Included">✓</span></td>
+            </tr>
+            <tr class="premium-feature-row">
+              <th scope="row"><span class="feature-title">Automatic Mini Player</span><span class="feature-detail">Can open when your playing tab becomes hidden</span></th>
+              <td><span class="not-included" aria-label="Not included">—</span></td>
+              <td class="premium-cell"><span class="included" aria-label="Included">✓</span><span class="cell-note">Premium feature</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-footnote">Automatic Picture-in-Picture depends on Chrome support, playback eligibility, and your site permissions.</p>
+    </section>
+
+    <section class="upgrade-panel" aria-labelledby="upgradeTitle">
+      <div class="upgrade-copy">
+        <p class="eyebrow">PREMIUM</p>
+        <h2 id="upgradeTitle">Let the player follow along.</h2>
+        <p>Subscribe to unlock Automatic Mini Player. You’ll see the price and billing details on Razorpay before confirming your subscription.</p>
+        <p id="premiumNote" class="status-note" role="status" aria-live="polite">Premium activates after the server verifies your subscription update from Razorpay.</p>
+      </div>
+      <div class="upgrade-actions">
+        <button id="premiumBtn" class="button primary" type="button">Subscribe to Premium <span aria-hidden="true">→</span></button>
+        <button id="checkPremiumBtn" class="button quiet" type="button">I have paid — check Premium</button>
+        <button id="cancelSubscriptionBtn" class="button quiet" type="button" hidden>Cancel renewal</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div id="supportRow" class="support-row" hidden>
+        <span>Like the project? Support future improvements.</span>
+        <button id="donateBtn" class="text-button" type="button">Support the project ↗</button>
+      </div>
+      <nav class="legal-links" id="legalLinks" aria-label="Legal and support links" hidden>
+        <a id="privacyLink" href="#">Privacy policy</a>
+        <a id="termsLink" href="#">Terms & subscription policy</a>
+        <a id="supportLink" href="#">Support</a>
+      </nav>
+      <p>Mini Player is an independent browser extension and is not affiliated with or endorsed by Netflix. Automatic Picture-in-Picture is subject to Chrome support and permissions.</p>
+    </footer>
+  </main>
+  <script src="welcome.js"></script>
+</body>
+</html>
